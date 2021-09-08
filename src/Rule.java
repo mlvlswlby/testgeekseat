@@ -8,9 +8,9 @@ public class Rule {
 		
 		for (int i=1; i<deathYear; i++) {
 			n3 = n1 + n2;
-            n1 = n2;
-            n2 = n3;
-            pk = pk + n3;
+           		n1 = n2;
+            		n2 = n3;
+            		pk = pk + n3;
 		}
 		
 		peopleKilled = pk;
