@@ -4,10 +4,13 @@ public class Rule {
 	public int peopleKilled;
 	
 	public void peopleWillKilled(int deathYear) {
-		int pk = 1;
+		int pk=1, n1=0, n2=1, n3=0;
 		
-		for (int i=0; i<deathYear; i++) {
-			pk = pk + i;
+		for (int i=1; i<deathYear; i++) {
+			n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+            pk = pk + n3;
 		}
 		
 		peopleKilled = pk;
@@ -15,11 +18,10 @@ public class Rule {
 	
 	private double average(int total, Rule pk[]) {
 		int temp = 0;
-		double average = 0;
 		for (int i=0; i<total; i++) {
 			temp = temp + pk[i].peopleKilled;
 		}
-		return average = (double)temp / total;
+		return (double)temp / total;
 	}
 	
 	//Count average and show the result
